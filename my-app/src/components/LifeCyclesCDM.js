@@ -3,28 +3,28 @@ import LifeCyclesCDMChild from './LifeCyclesCDMChild'
 
 export class LifeCyclesCDM extends Component {
     constructor(props) {
-        console.log('Constructor called')
-      super(props)
+        console.log('constructor called')
+        super(props)
     
-      this.state = {
-        data: 'Loading...'
-      }
+        this.state = {
+             data: 'loading'
+        }
     }
     getData() {
         console.log('getData() called')
         setTimeout(() => {
-            console.log('Data fetched')
+            console.log('Data fetched!')
             this.setState({
-                data: 'Loaded'
+                data: 'loaded'
             })
         }, 3000)
     }
     componentDidMount() {
-        console.log('componenet mounted')
+        console.log('Component mounted')
         this.getData()
     }
     render() {
-        console.log('render method called')
+        console.log('Render method called')
         return (
             <div>
                 <h1>{this.state.data}</h1>
