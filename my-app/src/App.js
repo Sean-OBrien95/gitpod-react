@@ -18,10 +18,20 @@ import LifeCyclesCWU from './components/LifeCyclesCWU';
 import ControlledForm from './components/ControlledForm';
 import UncontrolledForm from './components/UncontrolledForm';
 import SearchBar from './components/SearchBar'
+import HooksCounter from "./components/HooksCounter";
+import ClassCounter from "./components/ClassCounter";
+import ControlledFormsHooks from './components/ControlledFormsHooks';
+import UseStateWithArrays from './components/UseStatesWithArrays';
+import UseStateWithObjects from './components/UseStateWithObjects';
+import UseEffectCounter from './components/UseEffectCounter';
+import UseEffectCounterContainer from './components/UseEffectCounterContainer';
+import HTTPRequests from './components/HTTPRequests';
+import HTTPPost from './components/HTTPPost';
+import HTTPHooks from "./components/HTTPHooks";
 
 function App() {
   return <div className="App">
-      <SearchBar />
+      <HTTPHooks />
   </div>;
 };
 
